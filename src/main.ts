@@ -29,7 +29,7 @@ export class LogService {
 }
 
 export class AssetService {
-  constructor(private getExternalAssets: () => Asset[], private logService = new LogService()) {
+  constructor(private getExternalAssets: () => Asset[], private logService: LogService) {
   }
 
   getAssets(): Asset[] {
